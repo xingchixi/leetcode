@@ -46,6 +46,28 @@ class ListNode
 
 }
 
+
+function generateList($valuesArray){
+	if(count($valuesArray)==0){
+		return null;
+	}
+
+	$nodes = [];
+	for ($i=0; $i<count($valuesArray); $i++){
+		$nodes[] = new ListNode($valuesArray[$i]);
+	}
+
+	for($i=0; $i<count($valuesArray)-1; $i++){
+		$nodes[$i]->next = $nodes[$i+1];
+	}
+
+	return $nodes[0];
+}
+
+function getStrForList($list){
+	return $list===null?'null':$list->getListStr();
+}
+
 /*
 $n1 = new ListNode(101);
 $n2 = new ListNode(102);
