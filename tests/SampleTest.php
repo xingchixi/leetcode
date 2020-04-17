@@ -20,7 +20,7 @@ actual test:
 
 final class SampleTest extends TestCase
 {
-    public function testCanBeUsedAsString(): void
+    public function test1(): void
     {
         $a = 1;
         $this->assertEquals(1, $a);

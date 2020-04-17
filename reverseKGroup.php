@@ -45,17 +45,7 @@ function reverseKGroup($list, $k)
 
 
 
-$array = [];
-for($i=1; $i<=22; $i++){
-	$array[] = $i;
-}
-$list = generateList($array);;
-echo "list: \n";
-echo getStrForList($list). "\n";
 
-$reversed = reverseKGroup($list, 4);
-echo "final reversed: \n";
-echo getStrForList($reversed). "\n";
 
 
 
@@ -143,9 +133,6 @@ function reverseKGroup($list, $k){
 	
 
 }
-
-
-
 
 function reverseKGroup2($head, $k) {
 	$dummy=new ListNode(-1);

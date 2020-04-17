@@ -6,7 +6,7 @@ include_once 'nParentheses.php';
 final class nParenthesesTest extends TestCase
 {
 
-    public function testCanBeUsedAsString(): void
+    public function testGenerateParentheses(): void
     {
         $res = nParentheses(3);
 

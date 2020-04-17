@@ -21,9 +21,6 @@ function mergeLists($lists){
 
 	$count = 0;
 	while (true){
-		//echo getStrForLists($lists);
-		//echo "result: " . ($startNode===null?'x':$startNode->getListStr()). "\n";
-
 		$allNull = true;
 		$smallestNodeIndex = null;
 		for ($i = 0; $i < count($lists); $i++ ){
@@ -46,7 +43,6 @@ function mergeLists($lists){
 		}
 
 		$currentNode = $lists[$smallestNodeIndex];
-		//echo "smallest index $smallestNodeIndex > {$currentNode->val}  \n";
 
 		if ($previousNode !== null){
 			$previousNode->next = $currentNode;
@@ -64,20 +60,8 @@ function mergeLists($lists){
 		$previousNode->next = null;
 
 		$count++;
-
-		//safe guard
-		if ($count > 1000){
-			break;			
-		}
-
-		//echo "\n";
-
-
 	}
-
 	return $startNode;
-
-
 }
 
 
