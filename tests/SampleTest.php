@@ -14,8 +14,9 @@ chmod +x phpunit
 ./phpunit --version                      // test if it works
 
 actual test: 
-./phpunit  ./tests                       // test all testCases in tests directory
-./phpunit tests/nParenthesesTest.php     // run only one testCase
+./phpunit  ./tests                                          // test all testCases in tests directory
+./phpunit tests/nParenthenextPermutationTestsesTest.php     // run only one testCase
+./phpunit --filter test2 tests/nextPermutationTest.php      // run test method which matches pattern test2 in a testCase
 */
 
 final class SampleTest extends TestCase
