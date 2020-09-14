@@ -5,7 +5,7 @@ function pivotSearch($values, $target){
 
 
 function _pivotSearch($values, $target, $start, $end){
-   echo "\n\nsearching $start, $end,   ";
+   //echo "\n\nsearching $start, $end,   ";
     
     if($end-$start<=3){
         for($i=$start; $i<=$end; $i++){
