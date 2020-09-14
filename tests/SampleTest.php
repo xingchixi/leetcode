@@ -19,6 +19,12 @@ actual test:
 ./phpunit --filter test2 tests/nextPermutationTest.php      // run test method which matches pattern test2 in a testCase
 */
 
+//windows:
+//php .\phpunit .\tests                                     // test all testCases
+//php phpunit  tests\                                       // same as above
+//php phpunit tests\longestParenthesesTest.php              
+
+
 final class SampleTest extends TestCase
 {
     public function test1(): void
